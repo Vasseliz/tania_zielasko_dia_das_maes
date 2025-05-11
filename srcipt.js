@@ -6,7 +6,7 @@
       bordao: "ce ta dooido",
       senha: "nao lembro",
       cabelo: "vix perdi as contas",
-      faculdade: "ate 0 sexto semestre de adm no dom bosco"
+      faculdade: "direito"
     };
 
     const form = new FormData(e.target);
