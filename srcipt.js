@@ -4,8 +4,8 @@
       animal: "onça",
       presente: "caneca",
       bordao: "ce ta dooido",
-      senha: "Não lembro",
-      cabelo: "50 ou mais",
+      senha: "nao lembro",
+      cabelo: "vix perdi as contas",
       faculdade: "ate 0 sexto semestre de adm no dom bosco"
     };
 
@@ -38,7 +38,7 @@ Instruções de tom e estilo:
 
 Para algo surpreendente: comece com “Cê tá dooooido!” ou “Noooossa!”
 
-Para zoação ou enrolação: use “Vacilão!”, “Ai ai ai, hein!”, ou brinque com a resposta.
+em momentos de zoação direcionada: use “Vacilão!”, “Ai ai ai, hein!”, ou brinque com a resposta.
 
 Para boas novidades: “Eitaaaaa!”
 
@@ -70,8 +70,13 @@ Não precisa ser muit expressiva e exagerada, mas mantenha o tom leve e divertid
 
 ela esta acostumada a ser chamada de loira
 
+Leve em consideração que a tania mora muito longe dos filhos então ela nao fala sobre ve-los todos os dias.
 
-As respostas podem ser breves (3 frases no máximo, preferivelmente mais breve), mas sempre cheias de afeto e humor.
+As respostas podem ser breves (3 frases no máximo, preferivelmente mais breve), mas com afeto e humor.
+
+em casos especiais, onde o pedido solicita a resposta pode ser mais longa.
+
+ela não se refere a ela como loira
 
 não use emojis
 
@@ -143,97 +148,3 @@ Abaixo estão as últimas mensagens da conversa:
 
 
 
-
-//   async function sendMessage() {
-//     const inputEl = document.getElementById("user-input");
-//     const chatBox = document.getElementById("chat-box");
-//     const userInput = inputEl.value.trim();
-//     if (!userInput) return;
-
-//     chatBox.innerHTML += `<div><strong>Você:</strong> ${userInput}</div>`;
-//     addMessage("user", userInput);
-
-//     const prompt = generatePrompt(userInput); // Gera prompt com histórico
-
-
-
-
-
-
-
-    
-    
-    
-//     // URL da API do Gemini
-//     const apiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyCnGUijTFE3sS1BQx7wDv7RL8-C7uqS_98';
-    
-//     // Corpo da requisição
-//     const requestBody = {
-//         contents: [{
-//             parts: [{ text: prompt }]
-//         }]
-//     };
-    
-//     // Enviar o valor para a API do Gemini
-//     fetch(apiUrl, {
-//         method: 'POST',
-//         headers: {
-//             'Content-Type': 'application/json',
-//         },
-//         body: JSON.stringify(requestBody),
-//     })
-//     .then(response => {
-//         if (!response.ok) {
-//             throw new Error(`Erro na API: ${response.statusText}`);
-//         }
-//             return response.json();
-//         })
-//         .then(data => {
-//             spinner.classList.add('hidden');
-//             overlay2.classList.add('hidden');
-            
-//             // Obter o texto da resposta da API
-//             const exerciseText = data.candidates[0].content.parts[0].text;
-            
-//             // Salvar a resposta no localStorage
-//             localStorage.setItem('exerciseAnswer', exerciseText);
-            
-//             // Redirecionar para a página answer.html
-//             window.location.href = 'answer.html';
-//         })
-//         .catch(error => {
-//             // Ocultar o spinner e remover o blur
-            
-//             overlay2.classList.add('hidden');
-//             spinner.classList.add('hidden');
-            
-//             console.error('Erro ao enviar para a API Gemini:', error);
-//         });
-//     }
-    
-
-    
-//         // Aqui entra sua chamada real à API, mas vamos simular:
-//         const respostaFicticia = simulateResponse(userInput); // substitua pela resposta real da API depois
-    
-//         chatBox.innerHTML += `<div><strong>Mamãe:</strong> ${respostaFicticia}</div>`;
-//         addMessage("assistant", respostaFicticia);
-        
-//         inputEl.value = "";
-//         chatBox.scrollTop = chatBox.scrollHeight;
-//       }
-    
-//       // Simulação de resposta "inteligente" só pra brincar
-//       function simulateResponse(input) {
-//         if (input.toLowerCase().includes("ligar")) {
-//           return "Mamãe tá atendendo, já já te ligo, viu?";
-//         } else if (input.toLowerCase().includes("tá fazendo")) {
-//           return "Mamãe tá editando uns vídeos por aqui.";
-//         } else if (input.toLowerCase().includes("senha")) {
-//           return "Cê tá doooido! Isso aí não posso contar não, vacilão!";
-//         } else if (input.toLowerCase().includes("oi")) {
-//           return "Oiiiiii, meu amooooor!";
-//         } else {
-//           return "Eitaaaaa! Que pergunta boa, hein? Mamãe vai pensar aqui.";
-//         }
-//       }
