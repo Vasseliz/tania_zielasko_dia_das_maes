@@ -6,7 +6,9 @@
       bordao: "ce ta dooido",
       senha: "nao lembro",
       cabelo: "vix perdi as contas",
-      faculdade: "direito"
+      apanhou: "fugiu",
+      brava: "dentes",
+      acordar: "maquiagem"
     };
 
     const form = new FormData(e.target);
@@ -18,7 +20,7 @@
       }
     }
 
-    document.getElementById("quiz-result").innerText = `Você acertou ${acertos} de 6 perguntas!`;
+    document.getElementById("quiz-result").innerText = `Você acertou ${acertos} de 8 perguntas!`;
   });
 
 
