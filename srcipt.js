@@ -4,7 +4,7 @@
       animal: "onça",
       presente: "caneca",
       bordao: "ce ta dooido",
-      senha: "varias engraçadas",
+      senha: "Não lembro",
       cabelo: "50 ou mais",
       faculdade: "ate 0 sexto semestre de adm no dom bosco"
     };
