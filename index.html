@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site da Mamãe Tânia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[var(--cor5)] text-[var(--cor4)] font-sans">
+    <header class="bg-[var(--cor1)] p-6 text-center shadow-md">
+    <h1 class="text-3xl md:text-4xl font-bold">Bem-vindo ao mundo da Mãe mais braba!</h1>
+    <p class="mt-2 text-base md:text-lg">Amor, risadas e curiosidades únicas</p>
+    </header>
+<nav class="bg-[var(--cor3)] p-4 flex flex-wrap justify-center gap-4 text-sm md:text-base">
+    <a href="#chat" class="hover:underline">Chat com ela</a>
+    <a href="#quiz" class="hover:underline">Quiz sobre ela</a>
+    <a href="#audios" class="hover:underline">Áudios</a>
+    <a href="#fotos" class="hover:underline">Fotos</a>
+    <a href="#biografia" class="hover:underline">Biografia</a>
+</nav>
+
+<section id="chat" class="p-6">
+    <h2 class="text-2xl font-semibold mb-4">Converse com a Loira 💬</h2>
+    <div id="chat-box" class="border rounded-lg p-4 h-64 overflow-y-auto bg-white shadow"></div>
+    <div class="mt-4 flex gap-2">
+        <input id="user-input" type="text" placeholder="Faça uma pergunta..." class="flex-1 p-2 border rounded">
+        <button onclick="sendMessage()" class="bg-[var(--cor2)] text-white px-4 py-2 rounded">Enviar</button>
+    </div>
+</section>
+
+<section id="quiz" class="p-6 bg-[var(--cor1)]">
+    <h2 class="text-2xl font-semibold mb-4">Você conhece bem a Taninha da Quebrada? 🤔</h2>
+    <form id="quiz-form" class="space-y-6">
+        <div>
+            <p class="font-medium mb-2">Se Tânia fosse um animal, qual seria?</p>
+            <label><input type="radio" name="animal" value="gato" /> Gato</label><br>
+            <label><input type="radio" name="animal" value="onça" /> Onça</label><br>
+            <label><input type="radio" name="animal" value="coruja" /> Coruja</label><br>
+            <label><input type="radio" name="animal" value="cachorra" /> Cachorra</label>
+        </div>
+        <div>
+            <p class="font-medium mb-2">Qual o presente que ela mais ganhou de Dia das Mães?</p>
+            <label><input type="radio" name="presente" value="flores" /> Flores</label><br>
+            <label><input type="radio" name="presente" value="caneca" /> Caneca</label><br>
+            <label><input type="radio" name="presente" value="roupa" /> Roupa</label><br>
+            <label><input type="radio" name="presente" value="perfume" /> Perfume</label>
+        </div>
+        <div>
+            <p class="font-medium mb-2">Qual o maior bordão dela?</p>
+            <label><input type="radio" name="bordao" value="ce ta dooido" /> Cê tá dooido</label><br>
+            <label><input type="radio" name="bordao" value="misericordia" /> Misericórdia</label><br>
+            <label><input type="radio" name="bordao" value="oxe menino" /> Oxe menino</label><br>
+            <label><input type="radio" name="bordao" value="vai lavar louça" /> Vai lavar a louça</label>
+        </div>
+        <div>
+            <p class="font-medium mb-2">Qual a senha do Instagram dela?</p>
+            <label><input type="radio" name="senha" value="123456" /> 123456</label><br>
+            <label><input type="radio" name="senha" value="varias engraçadas" /> TchuchucaDaFavela</label><br>
+            <label><input type="radio" name="senha" value="tanialinda" /> tanialinda</label><br>
+            <label><input type="radio" name="senha" value="nao lembro" /> Não lembro</label>
+        </div>
+        <div>
+            <p class="font-medium mb-2">Quantas vezes ela mudou de cabelo?</p>
+            <label><input type="radio" name="cabelo" value="10" /> 7</label><br>
+            <label><input type="radio" name="cabelo" value="30" /> 20</label><br>
+            <label><input type="radio" name="cabelo" value="50 ou mais" /> vixxx perdemo as conta</label><br>
+            <label><input type="radio" name="cabelo" value="100" /> 32</label>
+        </div>
+        <div>
+            <p class="font-medium mb-2">Qual faculdade ela fez?</p>
+            <label><input type="radio" name="faculdade" value="medicina" /> Medicina</label><br>
+            <label><input type="radio" name="faculdade" value="direito" /> Direito</label><br>
+            <label><input type="radio" name="faculdade" value="ate 0 sexto semestre de adm no dom bosco" /> Até o sexto semestre de ADM no Dom Bosco</label><br>
+            <label><input type="radio" name="faculdade" value="nenhuma" /> Nenhuma</label>
+        </div>
+        <button type="submit" class="bg-[var(--cor2)] text-white px-4 py-2 rounded">Enviar respostas</button>
+        <div id="quiz-result" class="mt-4 font-semibold"></div>
+    </form>
+</section>
+
+<section id="audios" class="p-6">
+    <h2 class="text-2xl font-semibold mb-4">Frases da Drake do norte 🎤</h2>
+    <ul class="space-y-4">
+        <li>
+            <p class="font-bold">"Cê tá dooido!"</p>
+            <audio controls src="audios/ceTaDoido.mp3" class="w-full"></audio>
+        </li>
+        <li>
+            <audio controls src="audios/cetadoido10.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/cetadoido11.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/cetadoido12.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/cetadoido1254.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/cetadoido13.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/cetadoido14.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/cetadoido2 (1).mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/cetadoido4.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/cetadoido5.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/cetadoido8.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/cetadoidooo9.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/cetadoisdoo8.mp3" class="w-full"></audio>
+        </li><li>
+            <p class="font-bold">Debochada</p>
+            <audio controls src="audios/debochada.mp3" class="w-full"></audio>
+        </li><li>
+            <p class="font-bold">Braba</p>
+            <audio controls src="audios/brava1.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/brava2.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/brava3.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/brava4.mp3" class="w-full"></audio>
+        </li><li>
+            <p class="font-bold">Só os elogios</p>
+            <audio controls src="audios/aumentaAutaEstiam.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/aumentaAutosestima2.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/autoestima3.mp3" class="w-full"></audio>
+        </li><li>
+            <p class="font-bold">Boas Risadas</p>
+            <audio controls src="audios/engraçada3.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/engraçado.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/engraçado3.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/engraçado4.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/engraçados.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/trabalha deitado.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/gvt.mp3" class="w-full"></audio>
+        </li><li>
+            <p class="font-bold">Taninha Fofa</p>
+            <audio controls src="audios/foa6.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/fofa.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/fofa2.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/fofa3.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/fofa4.mp3" class="w-full"></audio>
+        </li>
+        <li>
+            <audio controls src="audios/fofa5.mp3" class="w-full"></audio>
+        </li><li>
+            <p class="font-bold">PROIBIDOS EM 100% DOS PAÍSES</p>
+            <audio controls src="audios/audioProibido.mp3" class="w-full"></audio>
+        </li><li>
+            <audio controls src="audios/proibido2.mp3" class="w-full"></audio>
+        </li>
+    </ul>
+</section>
+<section id="fotos" class="p-6 bg-[var(--cor1)]">
+    <h2 class="text-2xl font-semibold mb-4">Momentos especiais 📸</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <img src="" alt="Mamãe sorrindo" class="rounded shadow">
+    </div>
+</section>
+<section id="biografia" class="p-6">
+    <h2 class="text-2xl font-semibold mb-4">Quem é Tania</h2>
+    <p class="text-base md:text-lg">Tânia Carla Zielasko
+        Nasceu: 10/06/1976
+        Cidade: Curitiba - PR.
+        <br>
+        
+        Em julho de 1978 saímos de Curitiba com destino a Cuiaba e de ali fomos para o Barra do Bugres-MT, onde permanecemos por um período de 2 anos!
+        <br>
+        
+        Em 1980 retornamos para Cuiaba e permanecemos por mais dois anos e depois fomos para Sinop.
+        <br>
+        Sua primeira Escola foi em Cuiaba, estudou 2 anos em uma escola ADVENTISTA e depois para uma escola pública do Estado, e permaneceu por 12 anos
+        <br>
+        Em Sinop houve um acidente automobilístico em 1989 onde a Tânia fraturou a bacia em 6 lugares e fraturou o fêmur, permanecendo por 2 anos para recuperação total do ocorrido. ficando perfeita e sem nenhuma sequela
+        <br>
+    
+        
+        Em 1993 mudamos para Nova Alvorada do Sul (MS), onde ela se casou.
+        <br>
+        A Tânia sempre foi extremamente simpática e Educada, sendo sempre a melhor aluna da classe, em todas as escolas que estudou. Foi para a faculdade, la fez ate o sexto semestre de direito na UCDB (Universidade Católica Dom Bosco) em Campo Grande - MS daí o porque ela expressa corretamente.
+        <br>
+        Casou-se em Nova Alvorada do Sul-MS, onde nasceu.
+        Alguns anos depois, Tânia teve seu primeiro filho, o Guilherme, uma virada de chave que encheu sua vida de sentido. Logo, mudou-se para Cruzália, onde nasceram seus outros dois filhos. Eles, embora não a tenham deixado ficar rica de dinheiro (porque criança dá trabalho, viu?), fizeram dela milionária em afeto, bagunça boa e amor incondicional.
+<br>
+Em Cruzália, entre idas e vindas, viveu quase duas décadas. Mas como boa aventureira que é, um dia decidiu mudar tudo: foi morar na praia, sentir o vento no rosto e dar risada com o barulho do mar.
+<br>
+Depois? Ah, aí veio a maior loucura, se mandou pra Rondônia. E foi ali, no meio do mato, que encontrou o amor da sua vida e a paz que tanto merecia. Hoje vive feliz em sua chácara, com um coração leve, uma vista linda e, é claro, o maior salão de beleza da roça que o mundo já viu, onde distribui autoestima, conselhos e muita gargalhada.
+    </p>
+<footer class="text-center p-6 mt-8 bg-[var(--cor3)]">
+    <p>Feito com amor 💖 por Guilherme, Nícolas e Laura</p>
+</footer>
+<script src="srcipt.js"></script>
+</body>
+</html>

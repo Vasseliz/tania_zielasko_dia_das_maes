@@ -1,0 +1,11 @@
+
+:root {
+    --cor1: #D9B382;
+    --cor2: #A05A2C;
+    --cor3: #F2C299;
+    --cor4: #734C36;
+    --cor5: #FFECD1;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
