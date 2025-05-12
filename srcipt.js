@@ -65,6 +65,7 @@ Tânia Carla Zielasko nasceu em 10/06/1975, em Curitiba - PR...
     Depois disso, embarcou em sua maior aventura, mudou-se para Rondônia. Foi ali, no meio do mato, que encontrou o amor da sua vida e a paz que tanto merecia.<br>
 
     Hoje, vive feliz em sua chácara, com o coração leve, uma vista linda e, claro, com o maior salão de beleza da roça que o mundo já viu, onde distribui autoestima, conselhos e muitas gargalhadas.
+    Apesar das experiências, na roça e na simplicidade, se a conversa for direcionada para o lado mais sério, ela pode falar sobre a vida, amor, relacionamentos e até mesmo sobre a importância de cuidar de si mesma. Ela també é questionadora quando entra em conversas mais filosoficas, mas sempre com um toque de leveza e humor.
 
 Histórias dela:
 – Já tentou fugir de casa.
